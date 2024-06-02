@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волшебная галерея</title>
+    <style>
+
+    body {
+    font-family: "Roboto", "Arial", sans-serif;
+    }
+
+        .logo {
+            width:70px;
+            padding: 5px;
+        }
+
+        header {
+            display:flex;
+            background-color: #CDF0FB;
+            justify-content: space-between;
+        }
+        .menu-main {
+            display:flex;
+        }
+
+        .menu-main-item {
+            list-style-type: none;
+            padding-left:20px;
+            text-decoration:none;
+        }
+
+        .menu-main-item a {
+            text-decoration:none;
+            color: #112C6B;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        h1 {
+            color: #112C6B;
+        }
+
+        .img-gallery {
+            display: flex;
+            
+        }
+
+        .img-gallery-right {
+            display: flex;
+        }
+
+        .img-gallery-left {
+            display: flex;
+            width:50%;
+            flex-direction: column;
+        }
+
+        .img-gallery-left-2items {
+            display: flex;
+            padding: 10px;
+        }
+
+        .img-gallery-left-1item {
+            padding: 10px; 
+        }
+
+        .img-gallery-right {
+            display: flex;
+            width:50%;
+        }
+
+        .img-gallery-right-2items {
+            display: flex;
+            flex-direction:column;
+            padding: 10px;
+        }
+
+        .img-gallery-right-1item {
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            margin: 5px;
+            transition: 1s;
+        }
+
+        img:hover {
+            transform: scale(1.1); 
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul class="menu-main">
+                <li class="menu-main-item"><a href="#">Мои работы</a></li>
+                <li class="menu-main-item"><a href="#">Мои навыки</a></li>
+                <li class="menu-main-item"><a href="#">Контакты</a></li>
+             <ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Волшебная галерея
+        </h1>
+            <div class="img-gallery">
+                <div class="img-gallery-left">
+                    <div class="img-gallery-left-2items">
+                        <div class="img-gallery-left-item"><img src="./img/97043422_santa-lyuchiya-volshebnaya-shlyapa-3625.jpg" alt=""></div>
+                    <div class="img-gallery-left-item"><img src="./img/волшебная палочка.jpg" alt=""></div>
+                    </div>
+                    <div class="img-gallery-left-1item"><img  src="./img/зелье.jpg" alt=""></div>
+                </div>
+                    
+               
+                <div class="img-gallery-right">
+                    <div class="img-gallery-right-2items">
+                        <div class="img-gallery-right-item"><img src="./img/ковер.jpg" alt=""></div>
+                        <div class="img-gallery-right-item"><img src="./img/мантия.jpg" alt=""></div>
+                    </div>
+                    <div class="img-gallery-right-1item">
+                        <img   src="./img/метла.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+    </main>
+</body>
+</html>
